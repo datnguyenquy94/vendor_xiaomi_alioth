@@ -18,25 +18,25 @@ LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),alioth)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := com.fingerprints.extension
-LOCAL_MODULE_OWNER := xiaomi
-LOCAL_SRC_FILES := proprietary/vendor/framework/com.fingerprints.extension.jar
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_MODULE_SUFFIX := .jar
-LOCAL_VENDOR_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := android.hardware.biometrics.fingerprint@2.1-service
-LOCAL_MODULE_OWNER := xiaomi
-LOCAL_SRC_FILES := proprietary/vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_SUFFIX := .xml
-LOCAL_VENDOR_MODULE := true
-include $(BUILD_PREBUILT)
+# include $(CLEAR_VARS)
+# LOCAL_MODULE := com.fingerprints.extension
+# LOCAL_MODULE_OWNER := xiaomi
+# LOCAL_SRC_FILES := proprietary/vendor/framework/com.fingerprints.extension.jar
+# LOCAL_CERTIFICATE := platform
+# LOCAL_MODULE_TAGS := optional
+# LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+# LOCAL_MODULE_SUFFIX := .jar
+# LOCAL_VENDOR_MODULE := true
+# include $(BUILD_PREBUILT)
+# 
+# include $(CLEAR_VARS)
+# LOCAL_MODULE := android.hardware.biometrics.fingerprint@2.1-service
+# LOCAL_MODULE_OWNER := xiaomi
+# LOCAL_SRC_FILES := proprietary/vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml
+# LOCAL_MODULE_TAGS := optional
+# LOCAL_MODULE_CLASS := ETC
+# LOCAL_MODULE_SUFFIX := .xml
+# LOCAL_VENDOR_MODULE := true
+# include $(BUILD_PREBUILT)
 
 endif
